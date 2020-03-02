@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="02f90e0e-c41c-43b6-a0e5-5a82aacc311f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YUPwqs3q1CXPkHAFbqTN9yDzG4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\WorkSpace\python\Sarah_Project\Server" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Sarah_Project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Server" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Server/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.run" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="02f90e0e-c41c-43b6-a0e5-5a82aacc311f" name="Default Changelist" comment="" />
+      <created>1582994440727</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582994440727</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2049" y="375" width="1092" height="712" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582994675876">
+      <screen x="62" y="0" width="3378" height="1440" />
+    </state>
+    <state x="2049" y="375" width="1092" height="712" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.3378.1440@62.0.3378.1440" timestamp="1582994675876" />
+    <state width="1665" height="413" key="GridCell.Tab.0.bottom" timestamp="1583034644006">
+      <screen x="62" y="0" width="3378" height="1440" />
+    </state>
+    <state width="1665" height="413" key="GridCell.Tab.0.bottom/62.0.3378.1440/3440.-480.1080.1880@62.0.3378.1440" timestamp="1583034644006" />
+    <state width="1665" height="411" key="GridCell.Tab.0.bottom/62.0.3378.1440@62.0.3378.1440" timestamp="1582996425679" />
+    <state width="1665" height="413" key="GridCell.Tab.0.center" timestamp="1583034644006">
+      <screen x="62" y="0" width="3378" height="1440" />
+    </state>
+    <state width="1665" height="413" key="GridCell.Tab.0.center/62.0.3378.1440/3440.-480.1080.1880@62.0.3378.1440" timestamp="1583034644006" />
+    <state width="1665" height="411" key="GridCell.Tab.0.center/62.0.3378.1440@62.0.3378.1440" timestamp="1582996425679" />
+    <state width="1665" height="413" key="GridCell.Tab.0.left" timestamp="1583034644006">
+      <screen x="62" y="0" width="3378" height="1440" />
+    </state>
+    <state width="1665" height="413" key="GridCell.Tab.0.left/62.0.3378.1440/3440.-480.1080.1880@62.0.3378.1440" timestamp="1583034644006" />
+    <state width="1665" height="411" key="GridCell.Tab.0.left/62.0.3378.1440@62.0.3378.1440" timestamp="1582996425679" />
+    <state width="1665" height="413" key="GridCell.Tab.0.right" timestamp="1583034644006">
+      <screen x="62" y="0" width="3378" height="1440" />
+    </state>
+    <state width="1665" height="413" key="GridCell.Tab.0.right/62.0.3378.1440/3440.-480.1080.1880@62.0.3378.1440" timestamp="1583034644006" />
+    <state width="1665" height="411" key="GridCell.Tab.0.right/62.0.3378.1440@62.0.3378.1440" timestamp="1582996425679" />
+    <state x="2096" y="362" key="SettingsEditor" timestamp="1582996521812">
+      <screen x="62" y="0" width="3378" height="1440" />
+    </state>
+    <state x="2096" y="362" key="SettingsEditor/62.0.3378.1440@62.0.3378.1440" timestamp="1582996521812" />
+    <state x="1431" y="544" key="com.intellij.ide.util.TipDialog" timestamp="1583035298610">
+      <screen x="62" y="0" width="3378" height="1440" />
+    </state>
+    <state x="1431" y="544" key="com.intellij.ide.util.TipDialog/62.0.3378.1440/3440.-480.1080.1880@62.0.3378.1440" timestamp="1583035298610" />
+    <state x="2258" y="329" width="672" height="678" key="search.everywhere.popup" timestamp="1582995645962">
+      <screen x="62" y="0" width="3378" height="1440" />
+    </state>
+    <state x="2258" y="329" width="672" height="678" key="search.everywhere.popup/62.0.3378.1440@62.0.3378.1440" timestamp="1582995645962" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Server/logger.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
