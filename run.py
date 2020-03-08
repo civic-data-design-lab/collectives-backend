@@ -6,6 +6,9 @@ import Server.settings as ss
 from apscheduler.schedulers.background import BackgroundScheduler
 from Server.job import JOB
 from Server.database import MongoDB_Demo
+import sys
+sys.path.append('services/')
+sys.path.append('Server/')
 
 logger.info("Start Server")
 
@@ -21,4 +24,6 @@ JOB()
 MongoDB_Demo()
 
 # start flask service
-app.run(host=SERVER_HOST, port=SERVER_PORT, debug=False, threaded=True)
+
+if __name__ == "__main__":
+    app.run(host=SERVER_HOST, port=SERVER_PORT, debug=True, threaded=True)

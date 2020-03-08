@@ -1,0 +1,16 @@
+from Server import database
+import random
+import sys
+# Add parent directory to system path to be able to resolve Server folder
+sys.path.append('../')
+from services import twitter
+
+def JOB():
+    """
+    A demo for scheduler
+    :return:
+    """
+    print("Running the job")
+    twitter.scrap_tweets()
+    database.add_item("John Doe", random.randint(10, 60), random.randint(1, 23), "Maseeh")
+    return

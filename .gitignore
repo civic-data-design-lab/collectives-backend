@@ -1,3 +1,2 @@
-Server/collective
 Server/Log/*
-Server/__pycache__
+__pycache__

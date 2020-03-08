@@ -22,7 +22,7 @@ LOGGING_CURRENT_LEVEL = LOGGING_LEVEL[1]
 # Settings related to scheduler
 # -----------------------------------------------------------------------------
 SCHEDULER_MODE = "interval"
-SCHEDULER_INTERVAL = 10 # seconds
+SCHEDULER_INTERVAL = 14400 # seconds
 
 # -----------------------------------------------------------------------------
 # Settings related to database

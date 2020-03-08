@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02f90e0e-c41c-43b6-a0e5-5a82aacc311f" name="Default Changelist" comment="" />
+    <list default="true" id="02f90e0e-c41c-43b6-a0e5-5a82aacc311f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Sarah_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Sarah_Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_python/.ipynb_checkpoints/Instagram API-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_python/.ipynb_checkpoints/Twitter API Friendship Test-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_python/.ipynb_checkpoints/Twitter Topic Model-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_python/Instagram API.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_python/Server/Log/2020-03-06-16-21-19.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_python/Server/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_python/Server/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_python/Server/database.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_python/Server/job.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_python/Server/logger.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_python/Server/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_python/Server/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_python/Server/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_python/Twitter API Friendship Test.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_python/Twitter Topic Model.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_python/basic_scraper/tweet_scraper_topic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_python/basic_scraper/twitter_credentials.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_python/plot.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_python/run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_python/twitter_credentials.json" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +40,10 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="24375ada-50f3-46a8-8501-910e60e7aa53" />
   <component name="ProjectId" id="1YUPwqs3q1CXPkHAFbqTN9yDzG4" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -21,15 +51,20 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\UROP Spring\collectives-backend" />
+      <recent name="E:\UROP Spring\collectives-backend\Server" />
       <recent name="F:\WorkSpace\python\Sarah_Project\Server" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.twitter">
     <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Sarah_Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -42,7 +77,30 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Server/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="twitter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Sarah_Project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/twitter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -53,6 +111,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.twitter" />
         <item itemvalue="Python.run" />
       </list>
     </recent_temporary>
@@ -67,45 +126,57 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582994440727</updated>
+      <workItem from="1583552229700" duration="12536000" />
+      <workItem from="1583565819756" duration="2044000" />
+      <workItem from="1583650309141" duration="4747000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2049" y="375" width="1092" height="712" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582994675876">
       <screen x="62" y="0" width="3378" height="1440" />
     </state>
     <state x="2049" y="375" width="1092" height="712" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.3378.1440@62.0.3378.1440" timestamp="1582994675876" />
-    <state width="1665" height="413" key="GridCell.Tab.0.bottom" timestamp="1583034644006">
-      <screen x="62" y="0" width="3378" height="1440" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1583565563017">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583565563017" />
     <state width="1665" height="413" key="GridCell.Tab.0.bottom/62.0.3378.1440/3440.-480.1080.1880@62.0.3378.1440" timestamp="1583034644006" />
     <state width="1665" height="411" key="GridCell.Tab.0.bottom/62.0.3378.1440@62.0.3378.1440" timestamp="1582996425679" />
-    <state width="1665" height="413" key="GridCell.Tab.0.center" timestamp="1583034644006">
-      <screen x="62" y="0" width="3378" height="1440" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1583565563016">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583565563016" />
     <state width="1665" height="413" key="GridCell.Tab.0.center/62.0.3378.1440/3440.-480.1080.1880@62.0.3378.1440" timestamp="1583034644006" />
     <state width="1665" height="411" key="GridCell.Tab.0.center/62.0.3378.1440@62.0.3378.1440" timestamp="1582996425679" />
-    <state width="1665" height="413" key="GridCell.Tab.0.left" timestamp="1583034644006">
-      <screen x="62" y="0" width="3378" height="1440" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1583565563016">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583565563016" />
     <state width="1665" height="413" key="GridCell.Tab.0.left/62.0.3378.1440/3440.-480.1080.1880@62.0.3378.1440" timestamp="1583034644006" />
     <state width="1665" height="411" key="GridCell.Tab.0.left/62.0.3378.1440@62.0.3378.1440" timestamp="1582996425679" />
-    <state width="1665" height="413" key="GridCell.Tab.0.right" timestamp="1583034644006">
-      <screen x="62" y="0" width="3378" height="1440" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1583565563016">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583565563016" />
     <state width="1665" height="413" key="GridCell.Tab.0.right/62.0.3378.1440/3440.-480.1080.1880@62.0.3378.1440" timestamp="1583034644006" />
     <state width="1665" height="411" key="GridCell.Tab.0.right/62.0.3378.1440@62.0.3378.1440" timestamp="1582996425679" />
-    <state x="2096" y="362" key="SettingsEditor" timestamp="1582996521812">
-      <screen x="62" y="0" width="3378" height="1440" />
+    <state x="555" y="110" key="SettingsEditor" timestamp="1583552486840">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="555" y="110" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1583552486840" />
     <state x="2096" y="362" key="SettingsEditor/62.0.3378.1440@62.0.3378.1440" timestamp="1582996521812" />
     <state x="1431" y="544" key="com.intellij.ide.util.TipDialog" timestamp="1583035298610">
       <screen x="62" y="0" width="3378" height="1440" />
     </state>
     <state x="1431" y="544" key="com.intellij.ide.util.TipDialog/62.0.3378.1440/3440.-480.1080.1880@62.0.3378.1440" timestamp="1583035298610" />
-    <state x="2258" y="329" width="672" height="678" key="search.everywhere.popup" timestamp="1582995645962">
-      <screen x="62" y="0" width="3378" height="1440" />
+    <state x="999" y="188" width="672" height="388" key="search.everywhere.popup" timestamp="1583552556578">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="999" y="188" width="672" height="388" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1583552556578" />
     <state x="2258" y="329" width="672" height="678" key="search.everywhere.popup/62.0.3378.1440@62.0.3378.1440" timestamp="1582995645962" />
   </component>
   <component name="XDebuggerManager">
@@ -118,5 +189,8 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/collectives_backend$twitter.coverage" NAME="twitter Coverage Results" MODIFIED="1583565549951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
