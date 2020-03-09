@@ -12,6 +12,11 @@ sys.path.append('Server/')
 
 logger.info("Start Server")
 
+# start flask service
+
+if __name__ == "__main__":
+    app.run(host=SERVER_HOST, port=SERVER_PORT, debug=True, threaded=True)
+
 # start scheduler
 scheduler = BackgroundScheduler()
 scheduler.add_job(JOB, ss.SCHEDULER_MODE, seconds=ss.SCHEDULER_INTERVAL)
@@ -23,7 +28,3 @@ JOB()
 # Database demo
 MongoDB_Demo()
 
-# start flask service
-
-if __name__ == "__main__":
-    app.run(host=SERVER_HOST, port=SERVER_PORT, debug=True, threaded=True)

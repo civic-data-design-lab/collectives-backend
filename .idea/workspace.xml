@@ -2,31 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02f90e0e-c41c-43b6-a0e5-5a82aacc311f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Sarah_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Sarah_Project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_python/.ipynb_checkpoints/Instagram API-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_python/.ipynb_checkpoints/Twitter API Friendship Test-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_python/.ipynb_checkpoints/Twitter Topic Model-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_python/Instagram API.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_python/Server/Log/2020-03-06-16-21-19.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_python/Server/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_python/Server/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_python/Server/database.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_python/Server/job.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_python/Server/logger.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_python/Server/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_python/Server/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_python/Server/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_python/Twitter API Friendship Test.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_python/Twitter Topic Model.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_python/basic_scraper/tweet_scraper_topic.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_python/basic_scraper/twitter_credentials.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_python/plot.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_python/run.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_python/twitter_credentials.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/job.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server/job.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/twitter.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/twitter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,6 +110,7 @@
       <workItem from="1583552229700" duration="12536000" />
       <workItem from="1583565819756" duration="2044000" />
       <workItem from="1583650309141" duration="4747000" />
+      <workItem from="1583719563128" duration="1218000" />
     </task>
     <servers />
   </component>

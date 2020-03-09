@@ -1,1 +1,2 @@
 # Backend
+Dylan's code hasn't been totally been integrated yet. So, though the server is currently set to scrap the tweets every 4 hours, it breaks after adding the tweets onto the database. So, in order to see the api, comment out the line `twitter.scrap_tweets()` in job.py. Then restart the server and go to localhost:8080/api

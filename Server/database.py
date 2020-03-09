@@ -47,10 +47,10 @@ def get_items():
     '''
     :return: List of all the items in student collection in database
     '''
-    students = db.collectives
+    followers = db.collectives
     result = []
-    for student in students.find():
-        result.append(student['follower'])
+    for follower in followers.find():
+        result.append(follower['follower'])
     return dumps(result)
 
 
@@ -59,6 +59,7 @@ def add_raw_tweet(follower, tweets):
     row = {"follower": follower, "tweets": tweets}
     row_id = collectives.insert_one(row).inserted_id
     return row_id
+
 
 def drop_collection(collection):
     db[collection].drop()

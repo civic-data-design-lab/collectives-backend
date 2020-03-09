@@ -23,14 +23,15 @@ def scrap_tweets():
     print('loading followers')
     follower_list = twitter.get(endpoint='https://api.twitter.com/1.1/followers/ids.json', params={'screen_name':'mitsap','count':5000})
     print('loading tweets...')
-    tweets_df={}
-    for index, follower in enumerate(follower_list['ids'][0:900])
-        if index%100==0:
+
+    for index, follower in enumerate(follower_list['ids'][0:900]):
+        if index % 100 == 0:
             print('follower number ', index)
         try:
             returned = twitter.get(endpoint='https://api.twitter.com/1.1/statuses/user_timeline.json', params={'user_id':follower,'count':500, 'exclude_replies':True, 'include_rts':False})
             database.add_raw_tweet(follower, returned)
-            if (tweets_df):
+            print('in')
+            if index == 0:
                 tweets_df = pd.DataFrame(returned)
                 tweets_df['user'] = follower
             else:
@@ -44,7 +45,7 @@ def scrap_tweets():
 
 
     count_vect = CountVectorizer(max_df=0.8, min_df=2, stop_words='english')
-    # doc_term_matrix = count_vect.fit_transform(tweets_df['text'].values.astype('U'))
+    doc_term_matrix = count_vect.fit_transform(tweets_df['text'].values.astype('U'))
 
 
     from sklearn.decomposition import LatentDirichletAllocation

@@ -11,6 +11,6 @@ def JOB():
     :return:
     """
     print("Running the job")
-    twitter.scrap_tweets()
-    database.add_item("John Doe", random.randint(10, 60), random.randint(1, 23), "Maseeh")
+    # twitter.scrap_tweets() # Comment this line to be able ot use the api
+    # database.add_item("John Doe", random.randint(10, 60), random.randint(1, 23), "Maseeh")
     return
