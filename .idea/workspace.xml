@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02f90e0e-c41c-43b6-a0e5-5a82aacc311f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Sarah_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Sarah_Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server/database.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/job.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server/job.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic_scraper/tweet_scraper_topic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic_scraper/twitter_credentials.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/twitter.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/twitter.py" afterDir="false" />
     </list>
@@ -45,7 +49,29 @@
       <recent name="F:\WorkSpace\python\Sarah_Project\Server" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.twitter">
+  <component name="RunManager" selected="Python.run (1)">
+    <configuration name="run (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Sarah_Project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Sarah_Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -60,6 +86,50 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Server/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tweet_scraper_topic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Sarah_Project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/services" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/services/tweet_scraper_topic.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="twitter (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Sarah_Project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/services" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/services/twitter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -92,8 +162,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.twitter" />
-        <item itemvalue="Python.run" />
+        <item itemvalue="Python.run (1)" />
+        <item itemvalue="Python.twitter (1)" />
+        <item itemvalue="Python.tweet_scraper_topic" />
       </list>
     </recent_temporary>
   </component>
@@ -110,7 +181,14 @@
       <workItem from="1583552229700" duration="12536000" />
       <workItem from="1583565819756" duration="2044000" />
       <workItem from="1583650309141" duration="4747000" />
-      <workItem from="1583719563128" duration="1218000" />
+      <workItem from="1583719563128" duration="1579000" />
+      <workItem from="1583789865017" duration="1733000" />
+      <workItem from="1583874366030" duration="3662000" />
+      <workItem from="1583948380189" duration="680000" />
+      <workItem from="1584464719186" duration="12919000" />
+      <workItem from="1584553921330" duration="12588000" />
+      <workItem from="1584663482596" duration="10129000" />
+      <workItem from="1584718739282" duration="6318000" />
     </task>
     <servers />
   </component>
@@ -118,61 +196,80 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="361" y="71" key="#Inspections" timestamp="1584486068202">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1584486068202" />
     <state x="2049" y="375" width="1092" height="712" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582994675876">
       <screen x="62" y="0" width="3378" height="1440" />
     </state>
     <state x="2049" y="375" width="1092" height="712" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.3378.1440@62.0.3378.1440" timestamp="1582994675876" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1583565563017">
+    <state width="619" height="466" key="DebuggerActiveHint" timestamp="1584469776483">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583565563017" />
+    <state width="619" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1584469776483" />
+    <state width="1176" height="350" key="GridCell.Tab.0.bottom" timestamp="1584684914686">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1176" height="350" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584684914686" />
     <state width="1665" height="413" key="GridCell.Tab.0.bottom/62.0.3378.1440/3440.-480.1080.1880@62.0.3378.1440" timestamp="1583034644006" />
     <state width="1665" height="411" key="GridCell.Tab.0.bottom/62.0.3378.1440@62.0.3378.1440" timestamp="1582996425679" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1583565563016">
+    <state width="1176" height="350" key="GridCell.Tab.0.center" timestamp="1584684914685">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583565563016" />
+    <state width="1176" height="350" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1584684914685" />
     <state width="1665" height="413" key="GridCell.Tab.0.center/62.0.3378.1440/3440.-480.1080.1880@62.0.3378.1440" timestamp="1583034644006" />
     <state width="1665" height="411" key="GridCell.Tab.0.center/62.0.3378.1440@62.0.3378.1440" timestamp="1582996425679" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1583565563016">
+    <state width="1176" height="350" key="GridCell.Tab.0.left" timestamp="1584684914685">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583565563016" />
+    <state width="1176" height="350" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1584684914685" />
     <state width="1665" height="413" key="GridCell.Tab.0.left/62.0.3378.1440/3440.-480.1080.1880@62.0.3378.1440" timestamp="1583034644006" />
     <state width="1665" height="411" key="GridCell.Tab.0.left/62.0.3378.1440@62.0.3378.1440" timestamp="1582996425679" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1583565563016">
+    <state width="1176" height="350" key="GridCell.Tab.0.right" timestamp="1584684914685">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583565563016" />
+    <state width="1176" height="350" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1584684914685" />
     <state width="1665" height="413" key="GridCell.Tab.0.right/62.0.3378.1440/3440.-480.1080.1880@62.0.3378.1440" timestamp="1583034644006" />
     <state width="1665" height="411" key="GridCell.Tab.0.right/62.0.3378.1440@62.0.3378.1440" timestamp="1582996425679" />
-    <state x="555" y="110" key="SettingsEditor" timestamp="1583552486840">
+    <state width="746" height="246" key="GridCell.Tab.1.bottom" timestamp="1584493168813">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="555" y="110" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1583552486840" />
+    <state width="746" height="246" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584493168813" />
+    <state width="746" height="246" key="GridCell.Tab.1.center" timestamp="1584493168811">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="246" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1584493168811" />
+    <state width="746" height="246" key="GridCell.Tab.1.left" timestamp="1584493168811">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="246" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1584493168811" />
+    <state width="746" height="246" key="GridCell.Tab.1.right" timestamp="1584493168812">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="246" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1584493168812" />
+    <state x="553" y="108" key="SettingsEditor" timestamp="1584470860087">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="553" y="108" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1584470860087" />
     <state x="2096" y="362" key="SettingsEditor/62.0.3378.1440@62.0.3378.1440" timestamp="1582996521812" />
     <state x="1431" y="544" key="com.intellij.ide.util.TipDialog" timestamp="1583035298610">
       <screen x="62" y="0" width="3378" height="1440" />
     </state>
     <state x="1431" y="544" key="com.intellij.ide.util.TipDialog/62.0.3378.1440/3440.-480.1080.1880@62.0.3378.1440" timestamp="1583035298610" />
+    <state x="420" y="52" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1584574035296">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="420" y="52" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1584574035296" />
     <state x="999" y="188" width="672" height="388" key="search.everywhere.popup" timestamp="1583552556578">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="999" y="188" width="672" height="388" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1583552556578" />
     <state x="2258" y="329" width="672" height="678" key="search.everywhere.popup/62.0.3378.1440@62.0.3378.1440" timestamp="1582995645962" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Server/logger.py</url>
-          <line>6</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/collectives_backend$twitter.coverage" NAME="twitter Coverage Results" MODIFIED="1583565549951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/collectives_backend$twitter__1_.coverage" NAME="twitter (1) Coverage Results" MODIFIED="1584675346717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/services" />
+    <SUITE FILE_PATH="coverage/collectives_backend$run__1_.coverage" NAME="run (1) Coverage Results" MODIFIED="1584679758863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/collectives_backend$tweet_scraper_topic.coverage" NAME="tweet_scraper_topic Coverage Results" MODIFIED="1584469416409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/services" />
   </component>
 </project>

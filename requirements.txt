@@ -2,3 +2,8 @@ APScheduler==3.6.3
 Flask==1.1.1
 coloredlogs==14.0
 pymongo==3.10.1
+twython==3.7.0
+pandas==1.0.2
+numpy==1.17.4
+sklearn==0.0
+bokeh==1.4.0

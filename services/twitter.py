@@ -1,83 +1,142 @@
-
-from twython import Twython
-import json
-import pandas as pd
-import numpy as np
 import sys
+from twython import Twython
+from twython import TwythonRateLimitError
+from twython import TwythonAuthError
+import pandas as pd
+import json
+import random
+import numpy as np
+from pprint import pprint
+from datetime import datetime
+from datetime import timedelta
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.decomposition import LatentDirichletAllocation
+from apscheduler.schedulers.background import BackgroundScheduler
+from Server.logger import logger
 # Add parent directory to system path to be able to resolve Server folder
 sys.path.append('../')
 from Server import database
 
-def scrap_tweets():
-    # Drop the database collection
-    print("Dropping the collectives table")
-    database.drop_collection('collectives')
+# Constants to be used throughout the file
+SCHEDULE_AFTER = 1  # In minutes
+TWITTER_NAME = 'mitsap'  # Twitter user whose followers are to be queried
+FOLLOWERS_COUNT = 190  # Number of followers to be queried
+BATCH_COUNT = 100  # Number of followers to be queried in one batch
+TWEETS_COUNT = 500  # Maximum number of tweets to be scrapped from one follower
+RATE_LIMIT_ERROR_CODE = 429  # Error code when twython hits limit
 
-    # Load credentials from json file
-    with open("twitter_credentials.json", "r") as file:
-        creds = json.load(file)
 
-    # Instantiate an object
-    twitter = Twython(creds['CONSUMER_KEY'], creds['CONSUMER_SECRET'])
+# Load credentials from json file
+with open("twitter_credentials.json", "r") as file:
+    creds = json.load(file)
 
-    print('loading followers')
-    follower_list = twitter.get(endpoint='https://api.twitter.com/1.1/followers/ids.json', params={'screen_name':'mitsap','count':5000})
+# Instantiate a twython object with authentication token
+twitter = Twython(creds['CONSUMER_KEY'], creds['CONSUMER_SECRET'])
+print('loading followers')
+
+scheduler = BackgroundScheduler()
+followers_list = []
+previous_followers = []
+
+
+def time_to_schedule ():
+    '''
+    Helper function to get the time when the next batch of scrapping is to be done.
+    :return: time after 15 minutes from now
+    '''
+    return datetime.now() + timedelta(minutes=SCHEDULE_AFTER)
+
+
+def get_new_tweets ():
+    global followers_list
+    global previous_followers
+    try:
+        followers_list = twitter.get(endpoint='https://api.twitter.com/1.1/followers/ids.json',
+                                        params={'screen_name': TWITTER_NAME, 'count': FOLLOWERS_COUNT})['ids']
+    except (TwythonRateLimitError, TwythonAuthError) as error:
+        logger.info('Error while getting the user timeline', error.msg)
+
+    previous_followers = database.get_followers()
+    scrap_tweets(0)
+
+
+def scrap_tweets (start_index=0):
+    end_index = start_index + BATCH_COUNT
+    print('starting from', start_index, 'at time ', datetime.now())
     print('loading tweets...')
-
-    for index, follower in enumerate(follower_list['ids'][0:900]):
-        if index % 100 == 0:
-            print('follower number ', index)
+    for index, follower in enumerate(followers_list[start_index:end_index]):
+        if index % 10 == 0:
+            print('follower number ', start_index+index)
         try:
-            returned = twitter.get(endpoint='https://api.twitter.com/1.1/statuses/user_timeline.json', params={'user_id':follower,'count':500, 'exclude_replies':True, 'include_rts':False})
-            database.add_raw_tweet(follower, returned)
-            print('in')
-            if index == 0:
-                tweets_df = pd.DataFrame(returned)
-                tweets_df['user'] = follower
+            if follower in previous_followers:
+                last_tweet = previous_followers[follower]
+                timeline = twitter.get(endpoint='https://api.twitter.com/1.1/statuses/user_timeline.json',
+                                       params={'user_id': follower, 'count': TWEETS_COUNT, 'since_id': last_tweet,
+                                               'exclude_replies': True, 'include_rts': False})
+                # print(timeline)
+                database.append_raw_tweet(follower, timeline)
             else:
-                temp_df = pd.DataFrame(returned)
-                temp_df['user'] = follower
-                tweets_df = tweets_df.append(temp_df)
-        except:
-            print('private')
+                timeline = twitter.get(endpoint='https://api.twitter.com/1.1/statuses/user_timeline.json',
+                                       params={'user_id': follower, 'count': TWEETS_COUNT, 'exclude_replies': True,
+                                               'include_rts': False})
+                # print(timeline)
+                database.add_raw_tweet(follower, timeline)
+        except (TwythonAuthError, TwythonRateLimitError) as e:
+            logger.info('Error while getting the user timeline' + e.msg)
+            if e.error_code == RATE_LIMIT_ERROR_CODE:
+                end_index = start_index + index
+                break
+        except Exception as e:
+            logger.info('Error while getting the user timeline' + str(e))
 
-    from sklearn.feature_extraction.text import CountVectorizer
+    print('done upto', end_index)
+    if end_index < FOLLOWERS_COUNT:
+        print('scheduling next batch of tweets scrapping')
+        print(scheduler.get_jobs())
+        scheduler.add_job(scrap_tweets, 'date', args=[end_index], run_date=time_to_schedule())
+        if not scheduler.running:
+            scheduler.start()
+    else:
+        process_tweets()
 
 
+def process_tweets ():
+    tweets_df = None
+    raw_data = database.get_collection('collectives')
+    print('processing tweets')
+    for index, follower in enumerate(raw_data[:400]):
+        if index % 100 == 0:
+            print('processing follower', index)
+        if index == 0:
+            tweets_df = pd.DataFrame(follower['tweets'])
+            tweets_df['user'] = follower['follower']
+        else:
+            temp_df = pd.DataFrame(follower['tweets'])
+            temp_df['user'] = follower['follower']
+            tweets_df = tweets_df.append(temp_df)
     count_vect = CountVectorizer(max_df=0.8, min_df=2, stop_words='english')
     doc_term_matrix = count_vect.fit_transform(tweets_df['text'].values.astype('U'))
-
-
-    from sklearn.decomposition import LatentDirichletAllocation
+    print(doc_term_matrix)
 
     LDA = LatentDirichletAllocation(n_components=10, random_state=42)
     LDA.fit(doc_term_matrix)
 
-    import random
-
     for i in range(10):
-        random_id = random.randint(0,len(count_vect.get_feature_names()))
+        random_id = random.randint(0, len(count_vect.get_feature_names()))
         print(count_vect.get_feature_names()[random_id])
 
     first_topic = LDA.components_[0]
-
-    # In[216]:
-
 
     top_topic_words = first_topic.argsort()[-10:]
     print(top_topic_words)
     for i in top_topic_words:
         print(count_vect.get_feature_names()[i])
-    for i,topic in enumerate(LDA.components_):
+    for i, topic in enumerate(LDA.components_):
         print(f'Top 10 words for topic #{i}:')
         print([count_vect.get_feature_names()[i] for i in topic.argsort()[-10:]])
         print('\n')
 
-    # In[217]:
-
-
     topic_values = LDA.transform(doc_term_matrix)
-    topic_values.shape
     tweets_df['Topic'] = topic_values.argmax(axis=1)
     tweets_df.head()
 
@@ -97,10 +156,6 @@ def scrap_tweets():
     nmf = NMF(n_components=10, random_state=42)
     nmf.fit(doc_term_matrix )
 
-    # In[221]:
-
-
-    import random
 
     for i in range(10):
         random_id = random.randint(0,len(tfidf_vect.get_feature_names()))
@@ -161,7 +216,7 @@ def scrap_tweets():
     from bokeh.models import ColumnDataSource, LinearColorMapper, ColorBar, BasicTicker, PrintfTickFormatter, HoverTool
     from bokeh.palettes import Viridis256
     from bokeh.transform import transform
-    output_notebook()
+    # output_notebook()
 
     # In[23]:
 
@@ -184,8 +239,7 @@ def scrap_tweets():
 
     import sys
     # !{sys.executable} -m spacy download en
-    import re, numpy as np, pandas as pd
-    from pprint import pprint
+    import re
 
     # Gensim
     import gensim, spacy, logging, warnings
@@ -374,5 +428,5 @@ def scrap_tweets():
 
 
 if __name__ == "__main__":
-    scrap_tweets()
+    get_new_tweets()
 
