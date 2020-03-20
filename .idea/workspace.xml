@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02f90e0e-c41c-43b6-a0e5-5a82aacc311f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Sarah_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Sarah_Project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/job.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server/job.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_scraper/tweet_scraper_topic.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_scraper/twitter_credentials.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/twitter.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/twitter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +179,7 @@
       <workItem from="1584464719186" duration="12919000" />
       <workItem from="1584553921330" duration="12588000" />
       <workItem from="1584663482596" duration="10129000" />
-      <workItem from="1584718739282" duration="6318000" />
+      <workItem from="1584718739282" duration="6909000" />
     </task>
     <servers />
   </component>
