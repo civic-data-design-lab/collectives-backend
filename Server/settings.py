@@ -29,3 +29,5 @@ SCHEDULER_INTERVAL = 14400 # seconds
 # -----------------------------------------------------------------------------
 DATABASE_PORT = 27017
 DATABASE_ADDRESS = 'localhost'
+DATABASE_ADMIN = 'dylan'
+DATABASE_PWD = '8e*VMKR9AkvGtM'

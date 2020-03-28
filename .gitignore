@@ -1,3 +1,5 @@
 Server/Log/*
 __pycache__
 venv
+.idea
+.ipynp_checkpoints

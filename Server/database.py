@@ -3,26 +3,16 @@ from Server import settings as ss
 from bson.json_util import dumps
 
 # Connect to mongodb test database
-client = pymongo.MongoClient(host=ss.DATABASE_ADDRESS, port=ss.DATABASE_PORT)
+client = pymongo.MongoClient(
+    host=ss.DATABASE_ADDRESS,
+    port=ss.DATABASE_PORT,
+    username=ss.DATABASE_ADMIN,
+    password=ss.DATABASE_PWD,
+    authMechanism='SCRAM-SHA-256')
 db = client.test
 
 
-def add_item(name, age, course, dorm):
-    '''
-    Adds the item to the database
-    :param name:
-    :param age:
-    :param course:
-    :param dorm:
-    :return: ID of added item
-    '''
-    students = db.student
-    student = {"name": name, "age": age, "course": course, "dorm": dorm}
-    student_id = students.insert_one(student).inserted_id
-    return student_id
-
-
-def get_items():
+def get_items ():
     '''
     :return: List of all the items in student collection in database
     '''
@@ -35,13 +25,13 @@ def get_items():
 
 def get_collection (collection):
     '''
-    :return: Returns the mongodb collection for access
+    :return: Returns all the entries in the mongodb collection
     '''
     return db[collection].find()
 
 def get_followers():
     '''
-    :return: List of all the items in student collection in database
+    :return: Dictionary of all the followers mapped to their latest tweet id
     '''
     print('getting previous followers')
     followers = db.collectives

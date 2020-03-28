@@ -1,3 +1,11 @@
+import sys
+import os
+CURRENT_FILE = os.path.abspath(__file__)
+CURRENT_DIR = os.path.dirname(CURRENT_FILE)
+sys.path.append(CURRENT_DIR)
+sys.path.append(CURRENT_DIR+'/services/')
+sys.path.append(CURRENT_DIR+'/Server/')
+
 from Server import app
 import Server.views
 from Server.logger import logger
@@ -6,12 +14,8 @@ import Server.settings as ss
 from apscheduler.schedulers.background import BackgroundScheduler
 from Server.job import JOB
 from datetime import datetime
-import sys
-sys.path.append('services/')
-sys.path.append('Server/')
 
 logger.info("Start Server")
-
 
 # start scheduler
 scheduler = BackgroundScheduler()

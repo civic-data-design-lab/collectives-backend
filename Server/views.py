@@ -3,7 +3,7 @@ from flask import request, jsonify, render_template
 from Server import database
 
 
-@app.route('/api', methods=['GET'])
+@app.route('/', methods=['GET'])
 def api():
     '''
     The api endpoint
@@ -13,7 +13,7 @@ def api():
     response = database.get_items()
     return jsonify(response.replace("\"", "'")), 200
 
-@app.route('/')
+@app.route('/hello')
 def home():
     return "Hello"
 
